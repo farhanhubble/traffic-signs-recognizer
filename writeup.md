@@ -218,18 +218,18 @@ For the fifth image of road work the model was absolutely certain and predicted 
 ### Peeking Inside The Network
 The 5 web images used for testing above were passed throught the network and the activation maps of the convolution layers were visualized. The first convoution layer had clearly learned to recognize edges. Outlines of important shapes and text boundaries were visible in the activtion of the layers map.
 
-<center> ![stop sign](web/stop.jpg) </center>
+![stop sign](web/stop.jpg)
 ![predictions for road work sign](writeup-resources/stop_activation.png)
 
 When the only misclassified image of a caution sign was fed, the first convolution layer recognized the trianngular outlines of the signboard, the '!' symbol in the middle also seemed to trigger activations and it was not clear what
 could possibly have misled the classifier to predict a priority road.
-<p>
-<center> ![general caution](web/caution.jpg) </center>
+
+![general caution](web/caution.jpg)
 ![predictions for road work sign](writeup-resources/exclaim_activation.png)
 
 As an experiment, a single image of a priority road sign was also examined. Now the activation map showed bright cells corresponding to the outlines  of the rectangular sign board. No clear cause of misclassification could be ascertained from the activations of the first convolution layer alone.
-<p>
-<center> ![priority road sign](writeup-resources/priority.png) </center>
+
+![priority road sign](writeup-resources/priority.png)
 ![predictions for road work sign](writeup-resources/priority_activation.png)
 
 The second convolution layer's activations were not interpretable in this way but being able to map those activations back to pixels in the image would help immensely in debugginh the model. The idea of deconvolution ([Zeiler et. al.](https://www.cs.nyu.edu/~fergus/papers/zeilerECCV2014.pdf)) can be used to perform such a mapping in future.
