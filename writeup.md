@@ -152,7 +152,7 @@ Here are the results of the prediction:
 | Road work     		| Road work           							|
 
 
-The model was able to correctly guess 4 of the 5 traffic signs, that is it has  an accuracy of 80%.
+The model was able to correctly guess 4 of the 5 traffic signs, that is it has an accuracy of 80%. This is far less than the ~95% accuracy yieded on the test set. This could be becuase of overfitting but a sample size of 5 is too small to draw any conclusions.
 
 For the first image, the model was absolutely confident that it was a bumpy road sign (probability of 1.0). The top five soft max probabilities were
 
@@ -184,7 +184,7 @@ For the third image of no vehicles sign the best prediction was correct and had 
 | Probability         	|     Prediction	     |
 |:---------------------:|:--------------------:|
 | 1.0        			      | No Vehicles   			 |
-| .20     				      | Speed Limit 70 	km/h |
+| 0.0     				      | Speed Limit 70 	km/h |
 | 0.0					          | Speed Limit 50 	km/h |
 | 0.0      			        | Yield					       |
 | 0.0				            | Speed Limit 30 	km/h |
