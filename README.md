@@ -146,7 +146,7 @@ Here are the results of the prediction:
 | Image			        |     Prediction	        					|
 |:-----------------:|:---------------------------------:|
 | Bumpy Road     		| Bumpy Road  									    |
-| Genral Caution    | Priority Road   									|
+| General Caution   | Priority Road   									|
 | No vehicles				| No vehicles											  |
 | Stop  	      		| Stop            					 				|
 | Road work     		| Road work           							|
@@ -232,4 +232,4 @@ As an experiment, a single image of a priority road sign was also examined. Now 
 ![priority road sign](writeup-resources/priority.png)
 ![predictions for road work sign](writeup-resources/priority_activation.png)
 
-The second convolution layer's activations were not interpretable in this way but being able to map those activations back to pixels in the image would help immensely in debugginh the model. The idea of deconvolution ([Zeiler et. al.](https://www.cs.nyu.edu/~fergus/papers/zeilerECCV2014.pdf)) can be used to perform such a mapping in future.
+The second convolution layer's activations were not interpretable in this way but being able to map those activations back to pixels in the image would help immensely in debugging the model. The idea of deconvolution ([Zeiler et. al.](https://www.cs.nyu.edu/~fergus/papers/zeilerECCV2014.pdf)) can be used to perform such a mapping in future.
